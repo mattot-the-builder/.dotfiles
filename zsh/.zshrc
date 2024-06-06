@@ -117,13 +117,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/.composer/vendor/bin:$PATH
 
-# Mattot alias list
-alias sshmyms='az webapp ssh -n myms-engineering-and-academy --resource-group myms'
-alias dev='cd ~/Documents/dev'
-alias sail='vendor/bin/sail'
-alias rollup='./node_modules/.bin/rollup'
-
-# Project Folder
+# alias list
 alias dev='cd ~/dev'
 alias herd='cd ~/Herd'
 alias pa='php artisan'
@@ -137,6 +131,8 @@ alias nrd='npm run dev'
 alias go-dev='cd ~/go/src/github.com/mattot-the-builder/'
 alias erawhiz='cd ~/erawhiz'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias sppim='cd ~/erawhiz/sppim'
+alias sppim-v3='cd ~/erawhiz/sppim/sppim-v3'
 
 export npm_config_cache="~/local_npm_cache"
 
