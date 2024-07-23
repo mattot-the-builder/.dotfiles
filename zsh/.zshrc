@@ -82,7 +82,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git jsontools macos vi-mode)
+plugins=(jsontools macos vi-mode copyfile ng ripgrep thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -149,9 +149,9 @@ export HERD_PHP_82_INI_SCAN_DIR="/Users/mbfams/Library/Application Support/Herd/
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # remap ls
-alias ls="exa"
-alias ll="exa -alh"
-alias tree="exa --tree"
+alias ls="eza"
+alias ll="eza -alh"
+alias tree="eza --tree"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
