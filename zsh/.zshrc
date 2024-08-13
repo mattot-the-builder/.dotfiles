@@ -16,6 +16,11 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
+# flutter path
+export PATH=$PATH:$HOME/flutter/bin
+#cocoapods
+export PATH=$HOME/.gem/bin:$PATH
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -82,7 +87,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(jsontools macos vi-mode copyfile ng ripgrep thefuck)
+plugins=(jsontools macos vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -191,4 +196,3 @@ export NVM_DIR="/Users/blazingbyte/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
-
