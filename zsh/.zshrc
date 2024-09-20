@@ -158,6 +158,9 @@ alias ls="eza"
 alias ll="eza -alh"
 alias tree="eza --tree"
 
+# remap lazygit
+alias lg="lazygit"
+
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
@@ -196,3 +199,4 @@ export NVM_DIR="/Users/blazingbyte/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
