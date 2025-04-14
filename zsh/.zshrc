@@ -1,3 +1,4 @@
+
 autoload -Uz compinit
 compinit
 
@@ -31,7 +32,10 @@ else
   export EDITOR='nvim'
 fi
 
-# alias list
+# Alias List
+
+alias mattot-cloud='ssh mattot@109.106.244.231'
+
 alias dev='cd ~/dev'
 alias pa='php artisan'
 alias blazingbyte='cd ~/dev/blazingbyte/'
@@ -48,6 +52,9 @@ alias sppim-v3='cd ~/erawhiz/sppim/sppim-v3'
 export npm_config_cache="~/local_npm_cache"
 
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+# background tunnel for gosg non citizen mongodb
+alias gosg-mongo-tunnel="ssh -f -N -L 27018:localhost:27017 gosg@srv563423.hstgr.cloud"
 
 # remap ls
 alias ls="eza"
@@ -91,3 +98,22 @@ ofd() {
         open "$1"
     fi
 }
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/mattot/Library/Application Support/Herd/config/php/84/"
+
+# Case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# go path
+export GOPATH=$HOME/go
+
+export KC_BOOTSTRAP_ADMIN_USERNAME=mattot
+export KC_BOOTSTRAP_ADMIN_PASSWORD=password
+
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
