@@ -62,7 +62,7 @@ alias ll="eza -alh"
 alias tree="eza --tree"
 
 # remap lazygit
-alias lg="lazygit"
+alias gg="lazygit"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -117,3 +117,11 @@ export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+
+# pnpm
+export PNPM_HOME="/Users/mattot/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
