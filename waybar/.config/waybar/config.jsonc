@@ -1,0 +1,55 @@
+{
+  "layer": "top",
+  "modules-left": ["tray", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "cpu", "memory"],
+  "hyprland/window": {
+    "max-length": 50,
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name}",
+    "format-icons": {
+      "urgent": "",
+      "focused": "",
+      "default": "",
+    },
+  },
+  "clock": {
+    "interval": 1,
+    "format": "<span foreground='#9ECE6A'>󰥔</span> {:%I:%M %p  %A %d %b}",
+    "tooltip": true,
+    "tooltip-format": "{:%A, %d %B %Y}\n<tt>{calendar}</tt>",
+    "calendar": {
+      "format": {
+        "months": "<span color='#BB9AF7'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈁",
+    "tooltip-format": "{ifname} via {gwaddr} 󰈁",
+    "format-linked": "{ifname} (No IP) 󰈂",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+  },
+  "memory": {
+    "on-click": "sleep 0.1 && kitty btm",
+    "interval": 1,
+    "format": "  {used}",
+    "states": {
+      "warning": 85,
+    },
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "  {usage}%",
+  },
+}

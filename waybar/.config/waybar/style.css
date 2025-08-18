@@ -1,0 +1,90 @@
+@import "./themes/tokyonight.css";
+
+/* Global */
+
+* {
+  font-family: "JetBrainsMono Nerd Font", Cantarell, sans-serif;
+  border-radius: 0.6rem;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: shade(@base, 0.9);
+}
+
+#clock,
+#network,
+#cpu,
+#memory,
+#window {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+/* Bar */
+
+window#waybar {
+  background-color: transparent;
+}
+
+window > box {
+  background-color: transparent;
+  margin: 0.6rem;
+  margin-bottom: 0;
+}
+
+/* Workspaces */
+
+#workspaces:hover {
+  /* background-color: @green; */
+}
+
+#workspaces button {
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: @blue;
+  /* border: 0.2px solid transparent; */
+  background: transparent;
+}
+
+#workspaces button.active {
+  color: @red;
+}
+
+#workspaces button:hover {
+  /* border: .2px solid transparent; */
+  color: @subtext0;
+}
+
+/* Tooltip */
+
+tooltip {
+  background-color: @base;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #7dcfff;
+}
+
+tooltip label {
+  color: @text;
+}
+
+#memory {
+  color: @maroon;
+}
+
+#cpu {
+  color: @blue;
+}
+
+#clock {
+  color: @text;
+}
+
+#network {
+  color: @lavender;
+}
+
+#network.disconnected {
+  color: @foreground;
+}
