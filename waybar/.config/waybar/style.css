@@ -12,8 +12,11 @@
 
 #clock,
 #network,
+#temperature,
 #cpu,
 #memory,
+#pulseaudio,
+#custom-power,
 #window {
   padding-left: 0.6rem;
   padding-right: 0.6rem;
@@ -69,12 +72,12 @@ tooltip label {
   color: @text;
 }
 
-#memory {
+#cpu {
   color: @maroon;
 }
 
-#cpu {
-  color: @blue;
+#memory {
+  color: @yellow;
 }
 
 #clock {
@@ -85,6 +88,19 @@ tooltip label {
   color: @lavender;
 }
 
+#temperature {
+  color: @blue;
+}
+
 #network.disconnected {
   color: @foreground;
+}
+
+#pulseaudio {
+  color: @green; /* not active */
+}
+
+#custom-power {
+  color: @red;
+  margin-right: 5px;
 }
