@@ -16,9 +16,15 @@ compinit
 # starship
 eval "$(starship init zsh)"
 
-# alias
-alias gg="lazygit"
-
 # Set default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+# antidote ( zsh package manager )
+# source antidote
+source /home/mattot/.config/antidote/antidote.zsh
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
+
+# alias
+alias gg="lazygit"
