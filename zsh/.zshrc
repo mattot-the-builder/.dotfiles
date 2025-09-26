@@ -13,6 +13,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH="/home/mattot/.local/bin:$PATH"
+
 # starship
 eval "$(starship init zsh)"
 
